@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}{{cliente.nombre}}{% block cliente %}
+
+{% block contenido %}
+	{% for cliente in clientes %}
+		<table>
+			<tr>
+				<th>Nombre y Apellido</th>
+				<td>{{cliente.nombre_apellido}}</td>
+			</tr>
+			<tr>
+				<th>CI-RIF</th>
+				<td>{{cliente.CI_RIF}}</td>
+			</tr>
+			<tr>
+				<th>Teléfono</th>
+				<td>{{cliente.telefono}}</td>
+			</tr>
+			<tr>
+				<th>Dirección</th>
+				<td>{{cliente.direccion}}</td>
+			</tr>
+			<tr>
+				<th>E-mail</th>
+				<td>{{cliente.mail}}</td>
+			</tr>
+		</table>
+	{% endfor %}
+	{% for producto in productos %}
+		<table>
+			<tr>
+				<th>Nombre</th>
+				<td>{{producto.nombre}}</td>
+			</tr>
+			<tr>
+				<th>Tipo</th>
+				<td>{{producto.tipo}}</td>
+			</tr>
+			<tr>
+				<th>Cantidad</th>
+				<td>{{producto.cantidad}}</td>
+			</tr>
+		</table>
+	{% endfor %}
+{% endblock %}

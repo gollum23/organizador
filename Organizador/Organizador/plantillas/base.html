@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Organizador - {% block titulo %}{% endblock %} </title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="/">Inicio</a></li>
+				<li><a href="/add"></a>Agregar</li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+	<section class="contenido">
+		{% block contenido %}{% endblock %}
+	</section>
+	<footer>
+		
+	</footer>
+</body>
+</html>
+

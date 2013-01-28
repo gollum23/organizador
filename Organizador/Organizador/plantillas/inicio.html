@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block titulo %} Home {% endblock %}
+
+{% block contenido %}
+	{% for cliente in clientes %}
+		<ul>
+			<li><a href="/cliente"></a>{{cliente.nombre}}</li>
+		</ul>
+	{% endfor %}
+{% endblock %}
