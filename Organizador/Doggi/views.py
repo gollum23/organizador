@@ -4,7 +4,7 @@ from Doggi.models import Cliente, Producto, Tareas
 
 def vista_general(request):
     clientes = Cliente.objects.all()
-    return render_to_response('inicio.html', {'cliente': clientes})
+    return render_to_response('inicio.html', {'clientes': clientes})
 
 
 def cliente(request):
