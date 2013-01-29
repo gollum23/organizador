@@ -4,7 +4,8 @@
 {% block contenido %}
 	{% for cliente in clientes %}
 		<ul>
-			<li><a href="/cliente"></a>{{cliente.nombre}}</li>
+			<li><a href="/cliente"></a>{{cliente.nombre_apellido}}</li>
+		{% empty %}
 		</ul>
 	{% endfor %}
 {% endblock %}

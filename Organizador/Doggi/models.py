@@ -13,7 +13,7 @@ class Cliente(models.Model):
     mail = models.EmailField(max_length=75)
 
     def __unicode__(self):
-        return self.nombres
+        return self.nombre_apellido
 
 
 class Producto(models.Model):
