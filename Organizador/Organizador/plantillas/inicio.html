@@ -2,10 +2,11 @@
 {% block titulo %} Home {% endblock %}
 
 {% block contenido %}
-	{% for cliente in clientes %}
-		<ul>
-			<li><a href="/cliente"></a>{{cliente.nombre_apellido}}</li>
+	<ul>
+		{% for cliente in clientes %}
+			<li><a href="/cliente">{{ cliente.nombre_apellido</a></li>
 		{% empty %}
-		</ul>
-	{% endfor %}
+			<li>No existe clientes</li>
+		{% endfor %}
+	</ul>
 {% endblock %}
